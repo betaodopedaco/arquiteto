@@ -11,8 +11,299 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Todo o conteúdo HTML aqui (mantido igual ao original) -->
-    
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="assets/logo-aurora.png" alt="Aurora Arquitetura" loading="lazy">
+            </a>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#testimonials">Depoimentos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="#contact" class="btn btn-primary">Agende uma Consulta</a>
+                </div>
+            </nav>
+            <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Transformando Ambientes com Inovação e Design</h1>
+                <p>Projetos arquitetônicos que inspiram e criam espaços funcionais e esteticamente impecáveis.</p>
+                <div class="hero-actions">
+                    <a href="#portfolio" class="btn btn-primary">Ver Portfólio</a>
+                    <a href="#services" class="btn btn-outline">Nossos Serviços</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/hero-architecture.jpg" alt="Design de interiores moderno" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="about-image">
+                <img src="assets/about-image.jpg" alt="Equipe de arquitetos discutindo um projeto" loading="lazy">
+            </div>
+            <div class="about-content">
+                <span class="section-subtitle">Quem Somos</span>
+                <h2>Sua Visão, Nossa Construção. Excelência em Cada Detalhe.</h2>
+                <p>Na Aurora Arquitetura, acreditamos que a arquitetura vai além de construções; é a arte de criar experiências. Com uma equipe de arquitetos experientes e apaixonados, dedicamo-nos a transformar seus sonhos em espaços tangíveis que refletem sua personalidade e atendem às suas necessidades.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Design Inovador e Funcional</li>
+                    <li><i class="fas fa-check-circle"></i> Compromisso com a Sustentabilidade</li>
+                    <li><i class="fas fa-check-circle"></i> Entrega Pontual e Dentro do Orçamento</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Fale Conosco</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services section-padding bg-light-gray">
+        <div class="container">
+            <span class="section-subtitle text-center">O Que Oferecemos</span>
+            <h2 class="text-center">Nossos Serviços Completos em Arquitetura</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-drafting-compass service-icon"></i>
+                    <h3>Projeto Arquitetônico</h3>
+                    <p>Desenvolvimento de projetos residenciais, comerciais e institucionais com foco em inovação e funcionalidade.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-ruler-combined service-icon"></i>
+                    <h3>Design de Interiores</h3>
+                    <p>Criação de ambientes internos que combinam estética, conforto e praticidade para o seu dia a dia.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-tree service-icon"></i>
+                    <h3>Paisagismo</h3>
+                    <p>Elaboração de projetos de paisagismo que harmonizam a natureza com o ambiente construído.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-lightbulb service-icon"></i>
+                    <h3>Consultoria e Viabilidade</h3>
+                    <p>Análise técnica e estratégica para garantir a viabilidade e o sucesso do seu empreendimento.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-city service-icon"></i>
+                    <h3>Planejamento Urbano</h3>
+                    <p>Desenvolvimento de planos diretores e projetos urbanísticos para cidades e grandes áreas.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-handshake service-icon"></i>
+                    <h3>Gerenciamento de Obras</h3>
+                    <p>Acompanhamento e coordenação de todas as etapas da construção, garantindo qualidade e prazos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio section-padding">
+        <div class="container">
+            <span class="section-subtitle text-center">Nossos Trabalhos</span>
+            <h2 class="text-center">Projetos que Definem Espaços e Marcam Vidas</h2>
+            <div class="portfolio-filters">
+                <button class="portfolio-filter active" data-filter="all">Todos</button>
+                <button class="portfolio-filter" data-filter="residencial">Residencial</button>
+                <button class="portfolio-filter" data-filter="comercial">Comercial</button>
+                <button class="portfolio-filter" data-filter="interiores">Interiores</button>
+                <button class="portfolio-filter" data-filter="paisagismo">Paisagismo</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="residencial">
+                    <img src="assets/portfolio-residencial-1.jpg" alt="Casa moderna com grandes janelas" loading="lazy">
+                    <div class="item-overlay">
+                        <h3>Residência Campo Belo</h3>
+                        <p>Projeto de casa moderna e sustentável.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="comercial">
+                    <img src="assets/portfolio-comercial-1.jpg" alt="Edifício comercial contemporâneo" loading="lazy">
+                    <div class="item-overlay">
+                        <h3>Torre Empresarial Alpha</h3>
+                        <p>Design de fachada e áreas comuns.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="interiores">
+                    <img src="assets/portfolio-interiores-1.jpg" alt="Sala de estar com design minimalista" loading="lazy">
+                    <div class="item-overlay">
+                        <h3>Apartamento Urbano</h3>
+                        <p>Design de interiores e mobiliário customizado.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="paisagismo">
+                    <img src="assets/portfolio-paisagismo-1.jpg" alt="Jardim com elementos de água e paisagismo" loading="lazy">
+                    <div class="item-overlay">
+                        <h3>Jardins da Tranquilidade</h3>
+                        <p>Projeto paisagístico para área de lazer.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="residencial interiores">
+                    <img src="assets/portfolio-residencial-2.jpg" alt="Cozinha moderna com ilha" loading="lazy">
+                    <div class="item-overlay">
+                        <h3>Reforma Apartamento Centro</h3>
+                        <p>Integração de ambientes e design de cozinha.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="comercial">
+                    <img src="assets/portfolio-comercial-2.jpg" alt="Restaurante com ambiente aconchegante" loading="lazy">
+                    <div class="item-overlay">
+                        <h3>Restaurante Sabor & Arte</h3>
+                        <p>Projeto de interiores e iluminação para restaurante.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="visualization" class="visualization section-padding bg-darker text-light">
+        <div class="container">
+            <span class="section-subtitle text-center">Tecnologia e Imersão</span>
+            <h2 class="text-center">Explore Seus Projetos em 3D Interativo</h2>
+            <p class="text-center visualization-description">Utilizamos as mais avançadas tecnologias para que você visualize cada detalhe do seu futuro espaço antes mesmo de ele ser construído. Experimente a imersão de um modelo 3D do seu projeto.</p>
+            <div id="model-container" class="model-container">
+                </div>
+            <div class="model-controls">
+                <button id="rotate-btn" class="btn btn-outline-light"><i class="fas fa-sync-alt"></i> Girar Modelo</button>
+                <button id="reset-btn" class="btn btn-outline-light"><i class="fas fa-redo-alt"></i> Resetar Vista</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials section-padding bg-light-gray">
+        <div class="container">
+            <span class="section-subtitle text-center">O Que Dizem Nossos Clientes</span>
+            <h2 class="text-center">Sua Satisfação é a Nossa Maior Conquista</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-item">
+                    <img src="assets/client-1.jpg" alt="Foto do Cliente 1" class="client-avatar" loading="lazy">
+                    <p>"A equipe da Aurora Arquitetura superou todas as minhas expectativas. Transformaram minha casa em um verdadeiro lar, com um design funcional e lindo. Recomendo!"</p>
+                    <h4>Ana Paula S.</h4>
+                    <span>Proprietária Residencial</span>
+                </div>
+                <div class="testimonial-item">
+                    <img src="assets/client-2.jpg" alt="Foto do Cliente 2" class="client-avatar" loading="lazy">
+                    <p>"Profissionalismo impecável do início ao fim do projeto comercial. Entregaram no prazo e o resultado final trouxe um grande impacto positivo para o meu negócio."</p>
+                    <h4>Roberto M.</h4>
+                    <span>Empresário</span>
+                </div>
+                <div class="testimonial-item">
+                    <img src="assets/client-3.jpg" alt="Foto do Cliente 3" class="client-avatar" loading="lazy">
+                    <p>"Fiquei impressionada com a criatividade e a atenção aos detalhes. Meu jardim nunca esteve tão bonito e acolhedor. Um trabalho de paisagismo excelente!"</p>
+                    <h4>Carla V.</h4>
+                    <span>Cliente Paisagismo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <span class="section-subtitle text-center">Entre em Contato</span>
+            <h2 class="text-center">Vamos Construir Seu Sonho Juntos</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua da Arquitetura, 123 - Centro, Cidade - Estado</p>
+                    <p><i class="fas fa-phone"></i> (11) 98765-4321</p>
+                    <p><i class="fas fa-envelope"></i> contato@auroraarquitetura.com</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <h3>Envie-nos uma Mensagem</h3>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="">Selecione um Serviço</option>
+                            <option value="Projeto Arquitetônico">Projeto Arquitetônico</option>
+                            <option value="Design de Interiores">Design de Interiores</option>
+                            <option value="Paisagismo">Paisagismo</option>
+                            <option value="Consultoria">Consultoria</option>
+                            <option value="Gerenciamento de Obras">Gerenciamento de Obras</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Sua Mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col about-col">
+                    <img src="assets/logo-aurora-light.png" alt="Aurora Arquitetura Logo" loading="lazy">
+                    <p>Transformando seus sonhos em espaços que inspiram e duram.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#hero">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#">Projeto Arquitetônico</a></li>
+                        <li><a href="#">Design de Interiores</a></li>
+                        <li><a href="#">Paisagismo</a></li>
+                        <li><a href="#">Consultoria</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua da Arquitetura, 123</p>
+                    <p><i class="fas fa-phone"></i> (11) 98765-4321</p>
+                    <p><i class="fas fa-envelope"></i> info@auroraarquitetura.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aurora Arquitetura. Todos os direitos reservados.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.164.1/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.7.1/dist/gsap.min.js"></script>
     <script src="script.js"></script>
